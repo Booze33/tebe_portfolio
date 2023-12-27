@@ -1,7 +1,10 @@
-function App() {
+import Navbar from "./components/navbar";
+
+const App = () => {
   return (
-    <div className="App">
-      test
+    <div className="dark:bg-dark bg-light w-screen h-screen">
+      <Navbar />
+      <div> lorem 30 </div>
     </div>
   );
 }
