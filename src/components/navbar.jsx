@@ -1,14 +1,43 @@
+import { useState } from 'react';
 import Theme from "../features/theme";
+import Logo from '../features/logo'
+import { RxHamburgerMenu } from "react-icons/rx";
+import '../assets/stylesheet/nav.css'
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  }
+
   return (
-    <div className="fixed flex flex-row mt-0 justify-between items-center h-24">
-      <div className="relative p-2 left-96 duration-100 dark:bg-slate-700 bg-gary-100 rounded-full">
-        <a className="mx-2 text-xl" href="#">Features</a>
-        <a className="mx-2 text-xl" href="#">About</a>
+    <>
+      <div className="flex flex-row mt-0 pt-8 pl-8 justify-between items-center h-20 border-b-2 dark:border-indigo-200 border-indigo-950">
+        <Logo className="ml-16 dark:text-dark text-light" />
+        <div className="flex-row justify-between duration-100 hidden md:flex bg:light w-display">
+          <div className="left-96 duration-100 hidden md:block">
+            <a className="mx-2 text-xl" href="#">Portfolio</a>
+            <a className="mx-2 text-xl" href="#">About</a>
+          </div>
+          <Theme className="duration-100 hidden md:block" />
+        </div>
+
+        <nav className="menu-nav m-1 md:hidden">
+          <button
+          className={`hamburger ${isActive ? 'is-active' : ''}`}
+          onClick={handleClick}
+        >
+            <div className="bar" />
+          </button>
+        </nav>
       </div>
-      <Theme />
-    </div>
+      <div className={`mobile-nav ${isActive ? 'is-active' : ''}`}>
+        <a className="my-2 z-10 text-3xl" href="#">Portfolio</a>
+        <a className="mt-2 z-10 mb-12 text-3xl" href="#">About</a>
+        <Theme />
+      </div>
+    </>
   )
 }
 

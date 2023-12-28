@@ -59,7 +59,7 @@ function Theme() {
 
   return (
     <div>
-      <div className="fixed top-12 right-10 duration-100 dark:bg-gold bg-gary-100 rounded-full">
+      <div className="z-10 duration-100 dark:bg-gold bg-gary-100 rounded-full">
         {
           options?.map(opt => (
             <button

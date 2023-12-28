@@ -35,7 +35,8 @@ module.exports = {
         'light': '#030637',
         'light-2': '#070f2b',
         'dark': '#f1eaff',
-        'dark-2': '#F7FFE5'
+        'dark-2': '#F7FFE5',
+        'gold': '#F39F5A'
       },
       boxShadow: {
         '3xl': 'inset 6px 34px 30px -21px rgba(176,136,227,0.75)',
