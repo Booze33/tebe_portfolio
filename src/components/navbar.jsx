@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Theme from "../features/theme";
 import Logo from '../features/logo'
-import { RxHamburgerMenu } from "react-icons/rx";
 import '../assets/stylesheet/nav.css'
 
 const Navbar = () => {

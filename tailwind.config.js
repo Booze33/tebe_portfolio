@@ -6,12 +6,18 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      fontFamily: {
+        'cursive': "Dancing Script", 
+        'curved': "Oswald",
+      },
       backgroundColor: {
         'dark': '#030637',
         'dark-2': '#070f2b',
         'light': '#f1eaff',
         'light-2': '#F7FFE5',
-        'gold': '#F39F5A'
+        'gold': '#F39F5A',
+        'footer-light': '#3C0753',
+        'footer-dark': '#E5D4FF'
       },
       width: {
         'logo': '6rem',
@@ -23,7 +29,6 @@ module.exports = {
         'half': '50%',
       },
       height: {
-        'input': '6rem',
         'logo': '3rem',
         'full': '100%',
         'screen': '100vh',
