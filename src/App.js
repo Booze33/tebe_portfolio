@@ -1,11 +1,18 @@
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from "./components/navbar";
-import Footer from './components/footer';
+import About from './components/about';
+import Portfolio from './components/portfolio';
 
 const App = () => {
   return (
     <div className="dark:bg-dark bg-light w-screen h-screen dark:text-dark text-light">
-      <Navbar />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
