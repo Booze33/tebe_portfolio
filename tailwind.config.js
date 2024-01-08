@@ -23,6 +23,7 @@ module.exports = {
         'logo': '6rem',
         'input': '30vw',
         'full': '100%',
+        'twice': '200%',
         'footer': '35vw',
         'display': '60vw',
         'feature': '80vw',
