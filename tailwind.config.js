@@ -46,6 +46,9 @@ module.exports = {
       },
       boxShadow: {
         '3xl': 'inset 6px 34px 30px -21px rgba(176,136,227,0.75)',
+      },
+      margin: {
+        'minus': '-6rem',
       }
     },
   },
