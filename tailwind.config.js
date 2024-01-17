@@ -49,6 +49,7 @@ module.exports = {
       },
       margin: {
         'minus': '-8rem',
+        'flex': '15vw',
       },
       top: {
         'top': '60vh',
