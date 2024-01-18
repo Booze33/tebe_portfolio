@@ -9,7 +9,7 @@ import Six from './boxes/six';
 const Boxes = () => {
 
   return (
-    <div className="grid grid-cols-3 grid-rows-2 gap-1 mt-12 w-display mx-flex">
+    <div className="grid grid-cols-3 grid-rows-2 gap-y-0.5 gap-x-1 mt-12 w-display mx-flex">
       <One />
       <Two />
       <Three />

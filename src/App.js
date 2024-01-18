@@ -5,7 +5,7 @@ import Portfolio from './components/portfolio';
 
 const App = () => {
   return (
-    <div className="dark:bg-dark bg-light w-screen h-screen dark:text-dark text-light">
+    <div className="dark:bg-dark bg-light w-screen h-full dark:text-dark text-light">
       <BrowserRouter>
         <Navbar />
         <Routes>

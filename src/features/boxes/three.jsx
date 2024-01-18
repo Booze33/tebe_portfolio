@@ -1,6 +1,6 @@
 const Three = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" Width="240" height="185" viewBox="0 0 299 287" preserveAspectRatio="xMidYMid meet">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" Width="240" height="185" viewBox="0 0 299 287" preserveAspectRatio="xMidYMid meet" className="hover:scale-110 ease-in-out duration-300">
       <metadata>
         Created by potrace 1.10, written by Peter Selinger 2001-2011
       </metadata>
