@@ -12,16 +12,18 @@ module.exports = {
       },
       backgroundColor: {
         'dark': '#030637',
-        'dark-2': '#070f2b',
+        'dark-2': '#1B1A55',
         'light': '#f1eaff',
         'light-2': '#F7FFE5',
         'gold': '#F39F5A',
+        'collab': '#CD104D',
         'footer-light': '#3C0753',
         'footer-dark': '#E5D4FF'
       },
       width: {
         'logo': '6rem',
-        'input': '30vw',
+        'svg': '25vw',
+        'input': '50vw',
         'full': '100%',
         'twice': '200%',
         'footer': '35vw',
@@ -31,6 +33,7 @@ module.exports = {
       },
       height: {
         'logo': '3rem',
+        'svg': '10vw',
         'full': '100%',
         'screen': '100vh',
         'footer': '50vh',
@@ -42,7 +45,9 @@ module.exports = {
         'light-2': '#070f2b',
         'dark': '#f1eaff',
         'dark-2': '#F7FFE5',
-        'gold': '#F39F5A'
+        'gold': '#F39F5A',
+        'collab': '#CD104D',
+        'both': '#9290C3'
       },
       boxShadow: {
         '3xl': 'inset 6px 34px 30px -21px rgba(176,136,227,0.75)',
@@ -50,13 +55,12 @@ module.exports = {
       margin: {
         'minus': '-8rem',
         'flex': '15vw',
+        'left': '5vw',
       },
-      top: {
-        'top': '60vh',
+      borderRadius: {
+        'top': '55px',
       },
-      left: {
-        'left': '45vw'
-      }
+      
     },
   },
   plugins: [],
