@@ -17,10 +17,10 @@ const Navbar = () => {
         <Logo className="ml-16 dark:text-dark text-light" />
         <div className="flex-row justify-between duration-100 hidden md:flex bg:light w-display">
           <div className="left-96 duration-100 hidden md:block">
-            <Link className="mx-4 text-2xl" to="/">Portfolio</Link>
-            <Link className="mx-2 text-2xl" to="/about">About</Link>
+            <Link className="mr-4 text-2xl" to="/">Portfolio</Link>
+            <Link className="ml-2 text-2xl" to="/about">About</Link>
           </div>
-          <Theme className="duration-100 hidden md:block" />
+          <Theme className="duration-100 hidden md:block mr-12" />
         </div>
 
         <nav className="menu-nav m-1 md:hidden">
