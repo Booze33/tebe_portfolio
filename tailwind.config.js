@@ -22,6 +22,8 @@ module.exports = {
       },
       width: {
         'logo': '6rem',
+        'img': '7rem',
+        'img2': '10rem',
         'svg': '25vw',
         'input': '50vw',
         'full': '100%',
@@ -37,6 +39,8 @@ module.exports = {
       },
       height: {
         'logo': '3rem',
+        'img': '6rem',
+        'img2': '9rem',
         'svg': '10vw',
         'full': '100%',
         'screen': '100vh',
@@ -67,7 +71,10 @@ module.exports = {
       borderRadius: {
         'top': '55px',
       },
-      
+      fontSize: {
+        'sm': '0.8rem',
+        'xl': '1.25rem',
+      }
     },
   },
   plugins: [],
