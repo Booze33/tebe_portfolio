@@ -10,6 +10,10 @@ module.exports = {
         'cursive': "Dancing Script", 
         'curved': "Oswald",
       },
+      spacing: {
+        'top': '-0.5rem',
+        'left': '0',
+      },
       backgroundColor: {
         'dark': '#030637',
         'dark-2': '#1B1A55',

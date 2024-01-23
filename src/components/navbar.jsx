@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex flex-row mt-0 pt-8 pl-8 justify-between items-center h-20 border-b-2 dark:border-indigo-200 border-indigo-950">
+      <div className="fixed top-top left-left w-screen flex flex-row pt-8 pl-8 mb-12 justify-between items-center h-20 border-b-2 dark:border-indigo-200 border-indigo-950 dark:bg-dark bg-light">
         <Logo className="ml-16 dark:text-dark text-light" />
         <div className="flex-row justify-between duration-100 hidden md:flex bg:light w-display">
           <div className="left-96 duration-100 hidden md:block">
