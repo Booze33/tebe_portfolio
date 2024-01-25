@@ -72,6 +72,9 @@ module.exports = {
         'flex': '15vw',
         'left': '5vw',
       },
+      padding: {
+        'side': '15vw'
+      },
       borderRadius: {
         'top': '55px',
       },
