@@ -2,6 +2,7 @@ import Footer from './footer';
 import { Link } from 'react-router-dom';
 import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
+import Tech from './tech';
 
 const About = () => {
   return (
@@ -33,6 +34,7 @@ const About = () => {
             <FaPerson className="mt-1" />
           </Link>
         </div>
+        <Tech />
       </section>
       <Footer />
     </div>
