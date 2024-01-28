@@ -69,7 +69,11 @@ module.exports = {
       },
       margin: {
         'minus': '-8rem',
+        'minus2': '-2rem',
+        'ball': '-20vw',
+        'shift': '25vw',
         'flex': '15vw',
+        'flex2': '13vw',
         'left': '5vw',
       },
       padding: {

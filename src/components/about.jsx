@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
-        <h1 className="text-5xl sm:text-7xl text-center sm:w-display w-feature font-curved z-20">About Me</h1>
+        <h1 className="text-5xl sm:text-7xl text-center sm:w-display w-feature font-curved">About Me</h1>
       </div>
       <section className="mt-4 w-screen px-side flex flex-col ">
         <h2 className="text-xl mb-2 font-curved text-both">In a nutshell</h2>
@@ -24,6 +24,11 @@ const About = () => {
         <p className="my-2">Alongside My software development pursuits, I am also an aerospace student at the prestigious Warsaw University of Technology, where I am actively pursuing my other passion. My diverse academic background not only broadens my knowledge base but also cultivates a unique perspective that I can bring to my software development endeavors.</p>
         <p className="my-2">I’ve been passionate about development for many years, and have been grateful to grow in the programming world and also develop many projects as a I continue to learn.</p>
 
+        <div className="flex flex-col justify-center items-center w-screen mt-16 sm:ml-ball">
+          <h1 className="text-3xl sm:text-5xl mb-minus2 font-curved text-both">Technologies</h1>
+          <Tech />
+        </div>
+
         <div className="flex sm:flex-row flex-col justify-center items-center mt-8">
           <button className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
             <span>Get Resume</span>
@@ -34,7 +39,6 @@ const About = () => {
             <FaPerson className="mt-1" />
           </Link>
         </div>
-        <Tech />
       </section>
       <Footer />
     </div>
