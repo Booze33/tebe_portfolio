@@ -15,6 +15,7 @@ const Footer = () => {
           className="mx-4"
           target="_blank"
           href="https://www.linkedin.com/in/tebe-tisloh/"
+          rel="noreferrer"
         >
           <FaLinkedinIn className="text-xl" />
         </a>
@@ -22,6 +23,7 @@ const Footer = () => {
           className="mx-4"
           target="_blank"
           href="https://github.com/Booze33"
+          rel="noreferrer"
         >
           <FaGithub className="text-xl" />
         </a>
