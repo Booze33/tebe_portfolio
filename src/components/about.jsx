@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
 import Tech from './tech';
+import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf';
 
 const pathVariants = {
   hidden: {
@@ -22,6 +23,15 @@ const pathVariants = {
 
 const About = () => {
   const scrollRef = useRef(null);
+
+  const handleDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = Tisloh_Pam_Resume;
+    downloadLink.download = 'Tisloh_Pam_Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
 
   return (
     <div className="w-screen h-full mt-4 pt-12" ref={scrollRef}>
@@ -103,7 +113,7 @@ const About = () => {
         </div>
 
         <div className="flex sm:flex-row flex-col justify-center items-center mt-8">
-          <button className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
+          <button onClick={handleDownload} className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
             <span>Get Resume</span>
             <MdFileDownload className="mt-1 text-2xl" />
           </button>

@@ -14,7 +14,7 @@ import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
 import oop from '../assets/images/oop.png';
 import pokemon from '../assets/images/pokemon.png';
-import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf'
+import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf';
 
 const pathVariants = {
   hidden: {
