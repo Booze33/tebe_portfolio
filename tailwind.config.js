@@ -76,7 +76,9 @@ module.exports = {
         'left': '5vw',
       },
       padding: {
-        'side': '15vw'
+        'side': '15vw',
+        'left': '2vw',
+        'minus': '-4rem',
       },
       borderRadius: {
         'top': '55px',
@@ -84,7 +86,11 @@ module.exports = {
       fontSize: {
         'sm': '0.8rem',
         'xl': '1.25rem',
-      }
+      },
+      colors: {
+        'dark': '#030637',
+        'light': '#f1eaff',
+      },
     },
   },
   plugins: [],

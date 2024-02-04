@@ -160,7 +160,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/"
-            className="col-start-1 col-end-3 row-span-1 my-9 sm:mb-12"
+            className=" flex flex-col pl-left rounded-xl col-start-1 col-end-3 row-span-1 my-9 sm:mb-12 duration-500 hover:shadow-md hover:shadow-dark"
           >
             <img src={image} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
             <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
@@ -176,7 +176,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/"
-            className="col-span-1 row-start-2 my-9 sm:mb-8"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={expense} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
@@ -192,7 +192,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/"
-            className="col-span-1 row-start-2 my-9 sm:mb-8"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={recipe} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
@@ -208,7 +208,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/"
-            className="col-start-1 col-end-3 row-start-3 my-9 sm:mb-12"
+            className="flex flex-col pl-left rounded-xl pb-8 col-start-1 col-end-3 row-start-3 my-9 sm:mb-12 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={book} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
             <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
@@ -245,7 +245,7 @@ const Portfolio = () => {
               <img src={oop} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
               <div className="ml-3 sm:ml-5">
                 <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Backend_Library</h2>
-                <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
+                <p className="font-curved text-justify text-sm sm:text-xl">We create a console app that will help user to keep a record of different types of things their own: books, music albums, and games. Everything will be based on a UML class diagram.</p>
               </div>
             </motion.a>
             <motion.a
@@ -287,12 +287,12 @@ const Portfolio = () => {
               <img src={todo} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
               <div className="ml-3 sm:ml-5">
                 <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">To-do List</h2>
-                <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
+                <p className="font-curved text-justify text-sm sm:text-xl">The purpose of this project is to help you keep record of your daily task. Set your daily goals so you can achieve it.</p>
               </div>
             </motion.a>
             
           </div>
-          <div className="flex sm:flex-row flex-col justify-center items-center">
+          <div className="flex sm:flex-row flex-col justify-center items-center mb-16">
             <button onClick={handleDownload} className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
               <span>Get Resume</span>
               <MdFileDownload className="mt-1 text-2xl" />
