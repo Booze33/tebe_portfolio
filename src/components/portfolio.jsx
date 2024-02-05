@@ -159,7 +159,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/"
+            to="/projects/rover-app"
             className=" flex flex-col pl-left rounded-xl col-start-1 col-end-3 row-span-1 my-9 sm:mb-12 duration-500 hover:shadow-md hover:shadow-dark"
           >
             <img src={image} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
@@ -175,7 +175,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/"
+            to="/projects/expense-tracker"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={expense} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
@@ -191,7 +191,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/"
+            to="/projects/recipe-app"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={recipe} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
@@ -207,7 +207,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/"
+            to="/projects/book-store"
             className="flex flex-col pl-left rounded-xl pb-8 col-start-1 col-end-3 row-start-3 my-9 sm:mb-12 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={book} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
