@@ -21,7 +21,8 @@ module.exports = {
         'gold': '#F39F5A',
         'collab': '#CD104D',
         'footer-light': '#3C0753',
-        'footer-dark': '#E5D4FF'
+        'footer-dark': '#E5D4FF',
+        'both': '#9290C3'
       },
       width: {
         'logo': '6rem',
@@ -41,6 +42,7 @@ module.exports = {
         'half': '50%',
       },
       height: {
+        'one': '1px',
         'logo': '3rem',
         'img': '6rem',
         'img2': '9rem',
