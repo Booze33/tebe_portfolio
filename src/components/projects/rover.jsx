@@ -76,59 +76,59 @@ const RoverApp = () => {
             className="text-xl mt-4 mb-2 font-curved text-both">Collaborators</motion.h2>
 
           <div>
-            <div className="flex flex-col md-4">
-              <h1 className="flex flex-row mb-4">
+            <div className="flex flex-col mb-4">
+              <h1 className="flex flex-row mb-2">
                 <IoPersonSharp className="mr-2 mt-1" />
                 <span>Daniel Falcon</span>
               </h1>
               <a  href="https://www.linkedin.com/in/danfall/" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Linkedin</span>
+                <span>-  Linkedin</span>
                 <FaLinkedinIn className="ml-2 mt-1 text-lg" />
               </a>
               <a  href="https://github.com/Danfall369" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Github</span>
+                <span>-  Github</span>
                 <FaGithub className="ml-2 mt-1 text-lg" />
               </a>
             </div>
             <div className="flex flex-col mb-4">
-              <h1 className="flex flex-row mb-4">
+              <h1 className="flex flex-row mb-2">
                 <IoPersonSharp className="mr-2 mt-1" />
                 <span>Nabeel Ahmed</span>
               </h1>
               <a  href="https://www.linkedin.com/in/nabeel129/" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Linkedin</span>
+                <span>-  Linkedin</span>
                 <FaLinkedinIn className="ml-2 mt-1 text-lg" />
               </a>
               <a  href="https://github.com/Metaverse-Nabeel" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Github</span>
+                <span>-  Github</span>
                 <FaGithub className="ml-2 mt-1 text-lg" />
               </a>
             </div>
             <div className="flex flex-col mb-4">
-              <h1 className="flex flex-row mb-4">
+              <h1 className="flex flex-row mb-2">
                 <IoPersonSharp className="mr-2 mt-1" />
                 <span>Emmanuel Mhango</span>
               </h1>
               <a  href="https://www.linkedin.com/in/emmanuellmhango/" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Linkedin</span>
+                <span>-  Linkedin</span>
                 <FaLinkedinIn className="ml-2 mt-1 text-lg" />
               </a>
               <a  href="https://github.com/emmanuellmhango" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Github</span>
+                <span>-  Github</span>
                 <FaGithub className="ml-2 mt-1 text-lg" />
               </a>
             </div>
             <div className="flex flex-col mb-4">
-              <h1 className="flex flex-row mb-4">
+              <h1 className="flex flex-row mb-2">
                 <IoPersonSharp className="mr-2 mt-1" />
                 <span>Alejandro Velasquez</span>
               </h1>
               <a  href="https://www.linkedin.com/in/velzckcode/" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Linkedin</span>
+                <span>-  Linkedin</span>
                 <FaLinkedinIn className="ml-2 mt-1 text-lg" />
               </a>
               <a  href="https://github.com/VelzckC0D3" target="_blank" rel="noreferrer" className="flex flex-row ml-8">
-                <span>Github</span>
+                <span>-  Github</span>
                 <FaGithub className="ml-2 mt-1 text-lg" />
               </a>
             </div>
