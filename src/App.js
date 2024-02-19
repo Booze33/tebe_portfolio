@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter, useLocation } from 'react-router-dom';
 import Navbar from "./components/navbar";
+import Message from './features/message';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import RoverApp from './components/projects/rover';
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/projects/recipe-app" element={<RecipeApp />} />
             <Route path="/projects/expense-tracker" element={<ExpenseTracker />} />
           </Routes>
+          <Message />
           <LocationHandler />
         </BrowserRouter>
       </AnimatePresence>

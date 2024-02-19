@@ -1,0 +1,19 @@
+  .mobile-nav {
+    display: none;
+    transition: 2s;
+  }
+
+  .mobile-nav.is-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #9290C3;
+    width: 80vw;
+    height: 90vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 4rem;
+    position: fixed;
+  }
