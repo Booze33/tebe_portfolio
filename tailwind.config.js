@@ -22,7 +22,8 @@ module.exports = {
         'collab': '#CD104D',
         'footer-light': '#3C0753',
         'footer-dark': '#E5D4FF',
-        'both': '#9290C3'
+        'both': '#9290C3',
+        'transparent': 'transparent',
       },
       width: {
         'logo': '6rem',
@@ -40,6 +41,7 @@ module.exports = {
         'image': '78vw',
         'feature': '80vw',
         'half': '50%',
+        'message': '18rem',
       },
       height: {
         'one': '1px',
@@ -55,6 +57,7 @@ module.exports = {
         'small': '45vh',
         'display': '50rem',
         'grid': '55vh',
+        'nine': '68vh'
       },
       textColor: {
         'light': '#030637',
@@ -90,6 +93,7 @@ module.exports = {
         'xl': '1.25rem',
       },
       colors: {
+        'black': '#000',
         'dark': '#030637',
         'light': '#f1eaff',
       },
