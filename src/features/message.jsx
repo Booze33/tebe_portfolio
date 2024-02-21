@@ -36,14 +36,15 @@ const Message = () => {
           src="https://cdn.lordicon.com/fdxqrdfe.json"
           trigger="hover"
           colors="primary:#030637"
+          size="96"
           className="w-28 h-28"
         />
       </button>
       <div className={`message-nav ${isActive ? 'is-active' : ''} h-nine w-message rounded-lg dark:bg-dark bg-light duration-500 shadow-lg shadow-black sm:right-8 ml-6`}>
-        <div className="flex flex-row justify-around mt-minus2">
+        <div className="flex flex-row justify-between mt-minus4">
           <h1 className="text-lg font-curved text-both">Send feedback</h1>
           <button onClick={handleClick}>
-            <IoClose />
+            <IoClose className="text-3xl ml-20" />
           </button>
         </div>
         <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center">
