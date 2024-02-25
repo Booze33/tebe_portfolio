@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { IoPersonSharp } from "react-icons/io5";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { HiArrowUturnLeft } from "react-icons/hi2";
 import image from '../../assets/images/recipe.png';
 import recipe from '../../assets/images/recipe(2).png';
 import Footer from '../footer';
@@ -26,6 +28,10 @@ const RecipeApp = () => {
   return (
     <div className="w-screen h-full mt-4 pt-12" ref={scrollRef}>
       <div className="sm:px-16 px-6 mt-12 flex flex-col items-center justify-center">
+        <Link to="/" className="flex flex-row text-xl sm:text-3xl absolute top-24 left-[5vw]">
+          <HiArrowUturnLeft />
+          <span>Back</span>
+        </Link>
         <motion.h1
           variants={pathVariants}
           initial="hidden"
