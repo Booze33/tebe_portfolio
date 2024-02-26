@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { HiArrowUturnLeft } from "react-icons/hi2";
 import Footer from '../footer';
 import image from '../../assets/images/e-commerce.png';
 import commerce from '../../assets/images/commerce.png';
@@ -27,6 +29,10 @@ const RoverApp = () => {
   return (
     <div className="w-screen h-full mt-4 pt-12" ref={scrollRef}>
       <div className="sm:px-16 px-6 mt-12 flex flex-col items-center justify-center">
+        <Link to="/" className="flex flex-row text-xl sm:text-3xl absolute top-24 left-[5vw]">
+          <HiArrowUturnLeft />
+          <span>Back</span>
+        </Link>
         <motion.h1
           variants={pathVariants}
           initial="hidden"
