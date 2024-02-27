@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { HiArrowUturnLeft } from "react-icons/hi2";
 import image from '../../assets/images/expense.png';
 import commerce from '../../assets/images/expense(2).png';
 import Footer from '../footer';
@@ -25,6 +27,10 @@ const ExpenseTracker = () => {
   return (
     <div className="w-screen h-full mt-4 pt-12" ref={scrollRef}>
       <div className="sm:px-16 px-6 mt-12 flex flex-col items-center justify-center">
+        <Link to="/" className="flex flex-row text-xl sm:text-3xl absolute top-24 left-[5vw]">
+          <HiArrowUturnLeft />
+          <span>Back</span>
+        </Link>
         <motion.h1
           variants={pathVariants}
           initial="hidden"
