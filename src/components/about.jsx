@@ -108,7 +108,7 @@ const About = () => {
           className="my-2">I’ve been passionate about development for many years, and have been grateful to grow in the programming world and also develop many projects as a I continue to learn.</motion.p>
 
         <div className="flex flex-col justify-center items-center w-screen mt-16 sm:ml-ball">
-          <h1 className="text-3xl sm:text-5xl mb-minus2 sm:ml-8 ml-minus2 font-curved text-both">Technologies</h1>
+          <h1 className="text-3xl sm:text-5xl mb-minus2 sm:ml-12 ml-[-3rem] font-curved text-both">Technologies</h1>
           <Tech />
         </div>
 

@@ -38,7 +38,7 @@ const RoverApp = () => {
           initial="hidden"
           whileInView="visible"
           className="text-5xl sm:text-7xl text-center sm:w-display w-feature font-curved"
-        >RoverApp store app</motion.h1>
+        >Range-RoverApp</motion.h1>
         <div className="my-8 h-one w-full bg-both" />
 
         <img src={image} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl mb-8 duration-500 hover:scale-105" />

@@ -9,6 +9,8 @@ import nodejs from '../assets/tech/nodejs.png';
 import mongodb from '../assets/tech/mongodb.png';
 import git from '../assets/tech/git.png'
 import figma from '../assets/tech/figma.png';
+import ruby from '../assets/tech/ruby.png';
+import rails from '../assets/tech/rails.png';
 import docker from '../assets/tech/docker.png';
 import threejs from '../assets/tech/threejs.svg';
 
@@ -28,6 +30,14 @@ import threejs from '../assets/tech/threejs.svg';
     {
       name: "TypeScript",
       icon: typescript,
+    },
+    {
+      name: "Ruby",
+      icon: ruby,
+    },
+    {
+      name: "Rails",
+      icon: rails,
     },
     {
       name: "React JS",
