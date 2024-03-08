@@ -10,6 +10,10 @@ module.exports = {
         'cursive': "Dancing Script", 
         'curved': "Oswald",
       },
+      spacing: {
+        'top': '-0.5rem',
+        'left': '0',
+      },
       backgroundColor: {
         'dark': '#030637',
         'dark-2': '#1B1A55',
@@ -22,6 +26,8 @@ module.exports = {
       },
       width: {
         'logo': '6rem',
+        'img': '7rem',
+        'img2': '10rem',
         'svg': '25vw',
         'input': '50vw',
         'full': '100%',
@@ -37,6 +43,8 @@ module.exports = {
       },
       height: {
         'logo': '3rem',
+        'img': '6rem',
+        'img2': '9rem',
         'svg': '10vw',
         'full': '100%',
         'screen': '100vh',
@@ -61,13 +69,23 @@ module.exports = {
       },
       margin: {
         'minus': '-8rem',
+        'minus2': '-2rem',
+        'ball': '-20vw',
+        'shift': '25vw',
         'flex': '15vw',
+        'flex2': '13vw',
         'left': '5vw',
+      },
+      padding: {
+        'side': '15vw'
       },
       borderRadius: {
         'top': '55px',
       },
-      
+      fontSize: {
+        'sm': '0.8rem',
+        'xl': '1.25rem',
+      }
     },
   },
   plugins: [],
