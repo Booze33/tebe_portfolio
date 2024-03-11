@@ -11,9 +11,30 @@ const Footer = () => {
       </div>
       <p className="text-center text-xl font-curved">ttisloh[at]gmail[dot]com</p>
       <div className="flex justify-around mt-4">
-        <FaLinkedinIn className="text-xl mx-4" />
-        <FaGithub className="text-xl mx-4" />
-        <FaXTwitter className="text-xl mx-4" />
+        <a
+          className="mx-4"
+          target="_blank"
+          href="https://www.linkedin.com/in/tebe-tisloh/"
+          rel="noreferrer"
+        >
+          <FaLinkedinIn className="text-xl" />
+        </a>
+        <a
+          className="mx-4"
+          target="_blank"
+          href="https://github.com/Booze33"
+          rel="noreferrer"
+        >
+          <FaGithub className="text-xl" />
+        </a>
+        <a
+          className="mx-4"
+          target="_blank"
+          href="https://twitter.com/Tebe95645832"
+          rel="noreferrer"
+        >
+          <FaXTwitter className="text-xl" />
+        </a>
       </div>
       <p className="mt-8 text-gray-500 font-curved">Copyright © 2023 Tebe Tisloh</p>
     </div>

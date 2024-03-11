@@ -14,6 +14,7 @@ import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
 import oop from '../assets/images/oop.png';
 import pokemon from '../assets/images/pokemon.png';
+import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf';
 
 const pathVariants = {
   hidden: {
@@ -29,16 +30,99 @@ const pathVariants = {
   }
 };
 
+const dropVariants = {
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 2,
+      delay: 1,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const secondVariants = {
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.6,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const rightVariants = {
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+      delay: 0.2,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const leftVariants = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+      delay: 0.2,
+      ease: "easeInOut"
+    }
+  }
+};
+
 const Portfolio = () => {
   const scrollRef = useRef(null);
 
   const AnimatedLink = motion(Link);
 
+  const handleDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = Tisloh_Pam_Resume;
+    downloadLink.download = 'Tisloh_Pam_Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
-        <h1 className="text-5xl sm:text-7xl text-center sm:w-display w-feature font-curved">I'm Tebe Tisloh</h1>
-        <h1 className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved">I am glad you're here.</h1>
+        <motion.h1
+          variants={dropVariants}
+          initial="hidden"
+          whileInView="visible"
+          className="text-5xl sm:text-7xl text-center sm:w-display w-feature font-curved"
+        >I'm Tebe Tisloh</motion.h1>
+        <motion.h1
+          variants={secondVariants}
+          initial="hidden"
+          whileInView="visible"
+          className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved"
+        >I am glad you're here.</motion.h1>
 
         <Boxes />
       </div>
@@ -150,38 +234,66 @@ const Portfolio = () => {
             className="font-curved text-justify"
           >Smaller projects that I worked on.</motion.p>
           <div className="mt-8">
-            <a href="#" className="flex flex-row my-4">
-              <img src={pokemon} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
-              <div className="ml-3 sm:ml-5">
-                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Pokemon Cards</h2>
-                <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
-              </div>
-            </a>
-            <a href="#" className="flex flex-row my-4">
-              <img src={weather} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
-              <div className="ml-3 sm:ml-5">
-                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Weather</h2>
-                <p className="font-curved text-justify text-sm sm:text-xl">Detailed forecasts, and a wealth of pertinent information for cities worldwide.</p>
-              </div>
-            </a>
-            <a href="#" className="flex flex-row my-4">
-              <img src={todo} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
-              <div className="ml-3 sm:ml-5">
-                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">To-do List</h2>
-                <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
-              </div>
-            </a>
-            <a href="#" className="flex flex-row my-4">
+            <motion.a
+              variants={rightVariants}
+              initial="hidden"
+              whileInView="visible"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Booze33/Ruby-Capstone"
+              className="flex flex-row my-4">
               <img src={oop} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
               <div className="ml-3 sm:ml-5">
                 <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Backend_Library</h2>
                 <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
               </div>
-            </a>
+            </motion.a>
+            <motion.a
+              variants={leftVariants}
+              initial="hidden"
+              whileInView="visible"
+              target="_blank"
+              rel="noreferrer"
+              href="https://charming-nougat-0d03a1.netlify.app/"
+              className="flex flex-row my-4">
+              <img src={pokemon} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
+              <div className="ml-3 sm:ml-5">
+                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Pokemon Cards</h2>
+                <p className="font-curved text-justify text-sm sm:text-xl">In this project, We build a basic webapp which contains pokemon cards and display information from the API.</p>
+              </div>
+            </motion.a>
+            <motion.a
+              variants={rightVariants}
+              initial="hidden"
+              whileInView="visible"
+              target="_blank"
+              rel="noreferrer"
+              href="https://weather-web-bp0r.onrender.com/"
+              className="flex flex-row my-4">
+              <img src={weather} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
+              <div className="ml-3 sm:ml-5">
+                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Weather</h2>
+                <p className="font-curved text-justify text-sm sm:text-xl">Detailed forecasts, and a wealth of pertinent information for cities worldwide.</p>
+              </div>
+            </motion.a>
+            <motion.a
+              variants={leftVariants}
+              initial="hidden"
+              whileInView="visible"
+              target="_blank"
+              rel="noreferrer"
+              href="https://booze33.github.io/Web-pack-To-Do-lsit/dist/"
+              className="flex flex-row my-4">
+              <img src={todo} alt="description" className="w-img h-img sm:w-img2 sm:h-img2 rounded-2xl" />
+              <div className="ml-3 sm:ml-5">
+                <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">To-do List</h2>
+                <p className="font-curved text-justify text-sm sm:text-xl">Smaller projects that I worked on.</p>
+              </div>
+            </motion.a>
             
           </div>
           <div className="flex sm:flex-row flex-col justify-center items-center">
-            <button className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
+            <button onClick={handleDownload} className="flex flex-row py-2 px-4 rounded-2xl dark:bg-footer-dark bg-footer-light text-dark dark:text-light-2 border-[#9290C3] border-x-2 border-t-2 border-b-4 sm:mx-2 my-2 text-xl">
               <span>Get Resume</span>
               <MdFileDownload className="mt-1 text-2xl" />
             </button>
