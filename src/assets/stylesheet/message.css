@@ -1,0 +1,16 @@
+  .message-nav {
+    display: none;
+    transition: 2s;
+  }
+
+  .message-nav.is-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 8rem;
+    position: fixed;
+  }
