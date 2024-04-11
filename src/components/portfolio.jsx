@@ -8,7 +8,8 @@ import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
 import image from '../assets/images/e-commerce.png';
 import expense from '../assets/images/expense.png';
-import recipe from '../assets/images/recipe.png';
+import chat from '../assets/images/expense.png';
+import recipe from '../assets/images/chat.png';
 import book from '../assets/images/book.png';
 import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
@@ -153,7 +154,7 @@ const Portfolio = () => {
             </h3>
           </div>
         </motion.div>
-        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-4 sm:gap-y-4 my-24">
+        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-4 sm:gap-y-4 my-24">
           <AnimatedLink
             variants={pathVariants}
             initial="hidden"
@@ -217,6 +218,22 @@ const Portfolio = () => {
             </h3>
             <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Online BookStore</h2>
             <p className="font-curved text-justify w-nine">This app will allow you to log the books you start, record your current page numbers as you read, and mark books as finished when completed. Stay organized and monitor your reading habits and pace.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/expense-tracker"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={chat} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
+              <TbCircleFilled className="mt-1" />
+              <span> Solo Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">AI-Chat APP</h2>
+            <p className="font-curved text-justify w-nine">A full-stack app using OpenAi and ChatEngine Api. This app allows user to chat with other users and also with the AI.</p>
           </AnimatedLink>
         </div>
         <div>
