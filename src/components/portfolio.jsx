@@ -235,6 +235,22 @@ const Portfolio = () => {
             <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">AI-Chat APP</h2>
             <p className="font-curved text-justify w-nine">A full-stack app using OpenAi and ChatEngine Api. This app allows user to chat with other users and also with the AI.</p>
           </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/recipe-app"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={recipe} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
+              <TbCircleFilled className="mt-1" />
+              <span> Solo Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Web3-Crowd Funding</h2>
+            <p className="font-curved text-justify w-nine">A full-stack app with metamask pairing, smart contracts interaction, which sends ethereum devnet tokens  to campaign wallets.</p>
+          </AnimatedLink>
         </div>
         <div>
           <motion.h1
