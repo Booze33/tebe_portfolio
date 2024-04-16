@@ -8,7 +8,7 @@ import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
 import image from '../assets/images/e-commerce.png';
 import expense from '../assets/images/expense.png';
-import chat from '../assets/images/expense.png';
+import chat from '../assets/images/chat.png';
 import crowdFunding from '../assets/images/crowdFunding.jpg';
 import recipe from '../assets/images/chat.png';
 import book from '../assets/images/book.png';
@@ -226,7 +226,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/projects/expense-tracker"
-            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={chat} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
@@ -242,7 +242,7 @@ const Portfolio = () => {
             whileInView="visible"
             viewport={{ root: scrollRef }}
             to="/projects/recipe-app"
-            className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={crowdFunding} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
