@@ -225,7 +225,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/projects/expense-tracker"
+            to="/projects/ai-Chat"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={chat} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
@@ -241,7 +241,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/projects/recipe-app"
+            to="/projects/web3-Crowd"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={crowdFunding} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
