@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Footer from './footer';
 import Boxes from '../features/boxes';
@@ -110,6 +110,19 @@ const Portfolio = () => {
     document.body.removeChild(downloadLink);
   };
 
+  const [displayText, setDisplayText] = useState('');
+  const textArray = ['Glad You are here!', 'A Fullstack Developer', 'At Your Service'];
+  let index = 0;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplayText(textArray[index]);
+      index = (index + 1) % textArray.length;
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
@@ -123,8 +136,8 @@ const Portfolio = () => {
           variants={secondVariants}
           initial="hidden"
           whileInView="visible"
-          className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved"
-        >I am glad you're here.</motion.h1>
+          className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved sec-text"
+        >I Am <span className="sec-text">{displayText}</span></motion.h1>
 
         <Boxes />
       </div>
