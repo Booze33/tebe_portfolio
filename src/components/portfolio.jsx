@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Footer from './footer';
 import Boxes from '../features/boxes';
 import { Link } from 'react-router-dom';
+import { Typewriter, Cursor } from 'react-simple-typewriter';
 import { TbCircleFilled } from "react-icons/tb";
 import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
@@ -110,18 +111,10 @@ const Portfolio = () => {
     document.body.removeChild(downloadLink);
   };
 
-  const [displayText, setDisplayText] = useState('');
-  const textArray = ['Glad You are here!', 'A Fullstack Developer', 'At Your Service'];
-  let index = 0;
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDisplayText(textArray[index]);
-      index = (index + 1) % textArray.length;
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
+  // const {text} = useTypewriter({
+  //   words: ['Glad You are here!', 'A Fullstack Developer', 'At Your Service'],
+  //   loop: {},
+  // });
 
   return (
     <div className="w-screen h-full mt-4 pt-12">
@@ -137,7 +130,18 @@ const Portfolio = () => {
           initial="hidden"
           whileInView="visible"
           className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved sec-text"
-        >I Am <span className="sec-text">{displayText}</span></motion.h1>
+        >I Am <span className="sec-text">
+          <Typewriter
+            words={['Glad You are here!', 'A Fullstack Developer', 'At Your Service']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={120}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+          </span>
+        </motion.h1>
 
         <Boxes />
       </div>
