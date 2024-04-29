@@ -1,9 +1,9 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Footer from './footer';
 import Boxes from '../features/boxes';
 import { Link } from 'react-router-dom';
-import { Typewriter, Cursor } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 import { TbCircleFilled } from "react-icons/tb";
 import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
