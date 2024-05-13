@@ -3,12 +3,15 @@ import { motion } from 'framer-motion';
 import Footer from './footer';
 import Boxes from '../features/boxes';
 import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter';
 import { TbCircleFilled } from "react-icons/tb";
 import { MdFileDownload } from "react-icons/md";
 import { FaPerson } from "react-icons/fa6";
 import image from '../assets/images/e-commerce.png';
 import expense from '../assets/images/expense.png';
-import recipe from '../assets/images/recipe.png';
+import chat from '../assets/images/chat.png';
+import crowdFunding from '../assets/images/crowdFunding.jpg';
+import recipe from '../assets/images/chat.png';
 import book from '../assets/images/book.png';
 import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
@@ -108,6 +111,11 @@ const Portfolio = () => {
     document.body.removeChild(downloadLink);
   };
 
+  // const {text} = useTypewriter({
+  //   words: ['Glad You are here!', 'A Fullstack Developer', 'At Your Service'],
+  //   loop: {},
+  // });
+
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
@@ -121,8 +129,19 @@ const Portfolio = () => {
           variants={secondVariants}
           initial="hidden"
           whileInView="visible"
-          className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved"
-        >I am glad you're here.</motion.h1>
+          className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved sec-text"
+        >I Am <span className="sec-text">
+          <Typewriter
+            words={['Glad You are here!', 'A Fullstack Developer', 'At Your Service']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={120}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+          </span>
+        </motion.h1>
 
         <Boxes />
       </div>
@@ -153,7 +172,7 @@ const Portfolio = () => {
             </h3>
           </div>
         </motion.div>
-        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-4 sm:gap-y-4 my-24">
+        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-4 sm:gap-y-4 my-24">
           <AnimatedLink
             variants={pathVariants}
             initial="hidden"
@@ -217,6 +236,38 @@ const Portfolio = () => {
             </h3>
             <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Online BookStore</h2>
             <p className="font-curved text-justify w-nine">This app will allow you to log the books you start, record your current page numbers as you read, and mark books as finished when completed. Stay organized and monitor your reading habits and pace.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/ai-Chat"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={chat} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
+              <TbCircleFilled className="mt-1" />
+              <span> Solo Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">AI-Chat APP</h2>
+            <p className="font-curved text-justify w-nine">A full-stack app using OpenAi and ChatEngine Api. This app allows user to chat with other users and also with the AI.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/web3-Crowd"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-4 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={crowdFunding} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
+              <TbCircleFilled className="mt-1" />
+              <span> Solo Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Web3-Crowd Funding</h2>
+            <p className="font-curved text-justify w-nine">A full-stack app with metamask pairing, smart contracts interaction, which sends ethereum devnet tokens  to campaign wallets.</p>
           </AnimatedLink>
         </div>
         <div>
