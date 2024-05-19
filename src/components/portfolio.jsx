@@ -11,7 +11,7 @@ import image from '../assets/images/e-commerce.png';
 import expense from '../assets/images/expense.png';
 import chat from '../assets/images/chat.png';
 import crowdFunding from '../assets/images/crowdFunding.jpg';
-import recipe from '../assets/images/chat.png';
+import recipe from '../assets/images/recipe.png';
 import book from '../assets/images/book.png';
 import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
