@@ -17,6 +17,8 @@ import weather from '../assets/images/weather.png';
 import todo from '../assets/images/todo.png';
 import oop from '../assets/images/oop.png';
 import pokemon from '../assets/images/pokemon.png';
+import phanox from '../assets/images/phanox.png';
+import podcastr from '../assets/images/podcastr.png';
 import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf';
 
 const pathVariants = {
@@ -111,11 +113,6 @@ const Portfolio = () => {
     document.body.removeChild(downloadLink);
   };
 
-  // const {text} = useTypewriter({
-  //   words: ['Glad You are here!', 'A Fullstack Developer', 'At Your Service'],
-  //   loop: {},
-  // });
-
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
@@ -172,23 +169,26 @@ const Portfolio = () => {
             </h3>
           </div>
         </motion.div>
-        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-4 sm:gap-y-4 my-24">
+        
+        <div className="w-full flex flex-col justify-around sm:grid sm:grid-cols-2 sm:grid-rows-6 sm:gap-x-4 sm:gap-y-2 my-24">
+          {/* <* STARTED *********************************** HERE*> */}
           <AnimatedLink
             variants={pathVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/projects/rover-app"
+            to="/projects/inventory"
             className=" flex flex-col pl-left rounded-xl col-start-1 col-end-3 row-span-1 my-9 sm:mb-12 duration-500 hover:shadow-md hover:shadow-dark"
           >
-            <img src={image} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
-            <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
+            <img src={phanox} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
               <TbCircleFilled className="mt-1" />
-              <span> Collaborative Project</span>
+              <span> Solo Project</span>
             </h3>
-            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Land Rover: E-Commerce</h2>
-            <p className="font-curved text-justify w-nine">Make reservations for the rovers. Find the rover that fits your taste and go for a test drive.</p>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Inventory Management</h2>
+            <p className="font-curved text-justify w-nine">The Inventory Management System is designed to streamline and automate the process of managing inventory in a business environment. This system aims to enhance the efficiency of inventory tracking, and provide real-time data to support decision-making processes.</p>
           </AnimatedLink>
+          
           <AnimatedLink
             variants={pathVariants}
             initial="hidden"
@@ -197,13 +197,13 @@ const Portfolio = () => {
             to="/projects/expense-tracker"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
-            <img src={expense} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <img src={podcastr} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
               <TbCircleFilled className="mt-1" />
               <span> Solo Project</span>
             </h3>
-            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Expense Tracker</h2>
-            <p className="font-curved text-justify w-nine">A budget app to track spending by categories like 'Food' or 'Transport,' helping you manage your expenses effortlessly.</p>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Podcastr</h2>
+            <p className="font-curved text-justify w-nine">A cutting-edge AI SaaS platform that enables users to create, discover, and enjoy podcasts with advanced features like text-to-audio conversion with multi-voice AI, podcast thumbnail Image generation and seamless playback.</p>
           </AnimatedLink>
           <AnimatedLink
             variants={pathVariants}
@@ -268,6 +268,54 @@ const Portfolio = () => {
             </h3>
             <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Web3-Crowd Funding</h2>
             <p className="font-curved text-justify w-nine">A full-stack app with metamask pairing, smart contracts interaction, which sends ethereum devnet tokens  to campaign wallets.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/rover-app"
+            className=" flex flex-col pl-left rounded-xl col-start-1 col-end-3 row-start-5 my-9 sm:mb-12 duration-500 hover:shadow-md hover:shadow-dark"
+          >
+            <img src={image} alt="Description" className="w-large sm:w-image sm:h-large h-tiny rounded-3xl" />
+            <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
+              <TbCircleFilled className="mt-1" />
+              <span> Collaborative Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Land Rover: E-Commerce</h2>
+            <p className="font-curved text-justify w-nine">Make reservations for the rovers. Find the rover that fits your taste and go for a test drive.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/expense-tracker"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-6 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={expense} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-indigo-200 text-indigo-700 py-1 px-2 w-32 rounded-2xl my-6 flex flex-row text-end justify-end">
+              <TbCircleFilled className="mt-1" />
+              <span> Solo Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Expense Tracker</h2>
+            <p className="font-curved text-justify w-nine">A budget app to track spending by categories like 'Food' or 'Transport,' helping you manage your expenses effortlessly.</p>
+          </AnimatedLink>
+          <AnimatedLink
+            variants={pathVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ root: scrollRef }}
+            to="/projects/recipe-app"
+            className="flex flex-col pl-left rounded-xl col-span-1 row-start-6 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
+          >
+            <img src={recipe} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
+              <TbCircleFilled className="mt-1" />
+              <span> Collaborative Project</span>
+            </h3>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Social Recipe</h2>
+            <p className="font-curved text-justify w-nine">Create new food recipes and share them online. You can choose to make them private and can generate a shopping list for the recipes.</p>
           </AnimatedLink>
         </div>
         <div>
