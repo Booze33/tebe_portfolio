@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Footer from './footer';
 import Boxes from '../features/boxes';
@@ -19,6 +19,7 @@ import oop from '../assets/images/oop.png';
 import pokemon from '../assets/images/pokemon.png';
 import phanox from '../assets/images/phanox.png';
 import podcastr from '../assets/images/podcastr.png';
+import launch from '../assets/images/launch.png';
 import Tisloh_Pam_Resume from '../assets/stylesheet/Tisloh_Pam_Resume.pdf';
 
 const pathVariants = {
@@ -113,6 +114,17 @@ const Portfolio = () => {
     document.body.removeChild(downloadLink);
   };
 
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTypewriter(true);
+    }, 5000); // 5 seconds delay
+
+    // Cleanup the timer if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="w-screen h-full mt-4 pt-12">
       <div className="sm:px-12 px-6 mt-12 flex flex-col items-center justify-center">
@@ -127,16 +139,19 @@ const Portfolio = () => {
           initial="hidden"
           whileInView="visible"
           className="text-4xl sm:text-7xl text-center sm:w-display w-feature font-curved sec-text"
-        >I Am <span className="sec-text">
-          <Typewriter
-            words={['Glad You are here!', 'A Fullstack Developer', 'At Your Service']}
-            loop={5}
-            cursor
-            cursorStyle='_'
-            typeSpeed={120}
-            deleteSpeed={100}
-            delaySpeed={1000}
-          />
+        >
+          I Am <span className="sec-text">
+            {showTypewriter && (
+              <Typewriter
+                words={['Glad You are here!', 'A Fullstack Developer', 'At Your Service']}
+                loop={5}
+                cursor
+                cursorStyle='_'
+                typeSpeed={120}
+                deleteSpeed={200}
+                delaySpeed={2000}
+              />
+            )}
           </span>
         </motion.h1>
 
@@ -194,7 +209,7 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/projects/expense-tracker"
+            to="/projects/podcastr"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
             <img src={podcastr} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
@@ -210,16 +225,17 @@ const Portfolio = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ root: scrollRef }}
-            to="/projects/recipe-app"
+            to="/projects/launch"
             className="flex flex-col pl-left rounded-xl col-span-1 row-start-2 my-9 sm:mb-8 duration-500 hover:shadow-md dark:hover:shadow-dark hover:shadow-light"
           >
-            <img src={recipe} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
+            <img src={launch} alt="Description" className="w-large sm:w-small sm:h-small h-tiny rounded-3xl" />
             <h3 className="bg-pink-200 text-rose-800 py-1 px-2 rounded-2xl flex flex-row w-48 my-6">
               <TbCircleFilled className="mt-1" />
               <span> Collaborative Project</span>
             </h3>
-            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Social Recipe</h2>
-            <p className="font-curved text-justify w-nine">Create new food recipes and share them online. You can choose to make them private and can generate a shopping list for the recipes.</p>
+            <h2 className="text-2xl sm:text-3xl mb-2 font-curved text-both">Launch AI</h2>
+            <p className="font-curved text-justify w-nine">Launch AI is revolutionizing the startup ecosystem by offering a cutting-edge platform tailored for student-founders. Our AI-driven tools, namely the Dashboard, the MVP builder and the User Feedback Analyzer, streamline the startup journey, enabling rapid iterations and precise market validation.
+            </p>
           </AnimatedLink>
           <AnimatedLink
             variants={pathVariants}

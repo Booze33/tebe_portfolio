@@ -10,6 +10,8 @@ import Book from './components/projects/book';
 import Web3 from './components/projects/web3';
 import AiChat from './components/projects/AiChat';
 import Inventory from './components/projects/Inventory';
+import Podcastr from './components/projects/podcastr'
+import Launch from './components/projects/launch'
 import { AnimatePresence } from 'framer-motion';
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
             <Route path="/projects/web3-Crowd" element={<Web3 />} />
             <Route path="/projects/expense-tracker" element={<ExpenseTracker />} />
             <Route path="/projects/inventory" element={<Inventory />} />
+            <Route path="/projects/podcastr" element={<Podcastr />} />
+            <Route path="/projects/launch" element={<Launch />} />
           </Routes>
           <Message />
           <LocationHandler />
